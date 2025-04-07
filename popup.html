@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mermaid to SVG</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="node_modules/mermaid/dist/mermaid.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+  <div class="theme-switch">
+    <button id="themeToggle" class="theme-toggle-btn" aria-label="切换主题">
+      <i class="ri-sun-line light-icon"></i>
+      <i class="ri-moon-line dark-icon"></i>
+    </button>
+  </div>
+  <div class="container">
+    <div class="editor-section">
+      <div class="editor-header">
+        <i class="ri-code-line"></i>
+        <span>编辑器</span>
+      </div>
+      <textarea id="mermaidInput" placeholder="在此输入Mermaid代码..."></textarea>
+    </div>
+    <div class="preview-section">
+      <div class="preview-header">
+        <i class="ri-eye-line"></i>
+        <span>预览</span>
+      </div>
+      <div id="mermaidOutput"></div>
+      <div class="download-section">
+        <input type="text" id="fileNameInput" placeholder="请输入文件名（不需要扩展名）..." />
+        <button id="downloadBtn">
+          <i class="ri-download-line"></i>
+          下载SVG
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

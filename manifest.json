@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Mermaid to SVG",
+  "version": "1.0",
+  "description": "将Mermaid代码转换为图表并支持PNG导出",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "image_fx.jpg",
+      "48": "image_fx.jpg",
+      "128": "image_fx.jpg"
+    }
+  },
+  "permissions": [
+    "downloads"
+  ]
+}
